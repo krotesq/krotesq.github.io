@@ -1,9 +1,3 @@
-/* TODO
- - finish colors for every text tag
- - set initial sizes for every text tag
-*/
-
-
 /* --- light theme base & accent colors --- */
 /* edit to your preference for systems with light mode preference */
 @media (prefers-color-scheme: light) {
@@ -59,7 +53,7 @@ body {
     margin-right: auto;
 
     /* padding */
-    padding: .5rem;
+    padding: .8rem;
 
     /* set background color */
     background-color: var(--background-base-color);
@@ -221,6 +215,7 @@ summary:hover {
 li {
     color: var(--base-color);
     list-style-position: inside;
+    list-style: none;
 }
 
 /* table */
@@ -247,7 +242,12 @@ nav {
 }
 
 nav h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+nav h2 {
+    font-size: 1.5rem;
 }
 
 nav li {
@@ -265,7 +265,10 @@ nav a {
 footer {
     text-align: center;
     margin-top: .5rem;
-    margin-bottom: .5rem;
+    position: fixed;
+    left: 50%;
+    bottom: .5rem;
+    transform: translate(-50%, 0);
 }
 
 footer > p {
