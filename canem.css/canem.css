@@ -60,59 +60,48 @@ body {
 
     /* base font size & line height*/
     line-height: 1.5;
+
+    color: var(--base-color);
 }
 
 /* selected text color */
 ::selection {
-    color: var(--base-color);
     background-color: var(--accent-color);
 }
 
 /* --- h tags --- */
 h1 {
-    color: var(--base-color);
     font-size: 3.5rem;
     margin-bottom: .2rem;
 }
 
 h2 {
-    color: var(--base-color);
     font-size: 3rem;
     margin-bottom: .2rem;
 }
 
 h3 {
-    color: var(--base-color);
     font-size: 2.5rem;
     margin-bottom: .2rem;
 }
 
 h4 {
-    color: var(--base-color);
     font-size: 2rem;
     margin-bottom: .2rem;
 }
 
 h5 {
-    color: var(--base-color);
     font-size: 1.5rem;
-    margin-bottom: .4rem;
+    margin-bottom: .2rem;
 }
 
 h6 {
-    color: var(--base-color);
     font-size: 1.25rem;
     margin-bottom: .2rem;
 }
 
-/* --- p --- */
-p {
-    color: var(--base-color);
-}
-
 /* --- a --- */
 a {
-    color: var(--base-color);
     text-decoration: underline;
     transition-property: background-color;
     transition-duration: 80ms;
@@ -137,6 +126,10 @@ mark {
 code {
     color: var(--accent-color);
     font-family: var(--font-base-mono);
+}
+
+code::selection {
+    background-color: var(--accent-color);
 }
 
 /* --- samp  --- */
@@ -170,20 +163,18 @@ kbd {
 
 /* --- blockquote  --- */
 blockquote {
-    color: var(--base-color);
     background-color: var(--background-accent-color);
     border-left: 3px solid var(--accent-color);
     border-radius: 1px;
     padding-left: .8rem;
     padding-top: .5rem;
     padding-bottom: .7rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 /* --- abbr --- */
 abbr {
-    color: var(--base-color);
     cursor: help;
 }
 
@@ -197,14 +188,13 @@ hr {
 
 /* --- details & summary --- */
 details {
-    color: var(--base-color);
     background-color: var(--background-accent-color);
     border-radius: 1px;
     padding-left: .4rem;
     padding-top: .3rem;
     padding-bottom: .3rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 summary:hover {
@@ -213,26 +203,67 @@ summary:hover {
 
 /* --- list --- */
 li {
-    color: var(--base-color);
     list-style-position: inside;
     list-style: none;
 }
 
 /* table */
 table, th, td {
-    color: var(--base-color);
     border: 1px solid var(--light-color);
     border-collapse: collapse;
     text-align: center;
+
 }
 
 table {
     width: 100%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 th, td {
     padding: .5rem;
 }
+
+/* input submit and button */
+input[type="submit"], button {
+    color: var(--base-color);
+    background-color: var(--background-base-color);
+    border: 1px solid var(--accent-color);
+    border-radius: 1px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    transition-property: background-color;
+    transition-duration: 80ms;
+    transition-timing-function: ease-in;
+}
+
+input[type="submit"]:hover, button:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+
+/* input text */
+input[type="text"], textarea {
+    color: var(--base-color);
+    background-color: var(--background-accent-color);
+    border: 1px solid var(--light-color);
+    border-radius: 1px;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+input[type="text"]:focus, textarea:focus {
+    outline: none;
+}
+
+
 
 /* nav */
 /* styles of specific tags are changed if parent is a nav tag */
@@ -271,10 +302,10 @@ footer {
     transform: translate(-50%, 0);
 }
 
-footer > p {
+footer p {
     color: var(--light-color);
 }
 
-footer p > a, footer a, footer > a:visited, footer > p > a:visited {
+footer a, footer a:visited{
     color: var(--light-color);
 }
