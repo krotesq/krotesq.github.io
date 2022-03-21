@@ -47,6 +47,8 @@ html {
 
 /* --- body --- */
 body {
+    color: var(--base-color);
+
     /* set max width and center body */
     max-width: 700px;
     margin-left: auto;
@@ -60,8 +62,6 @@ body {
 
     /* base font size & line height*/
     line-height: 1.5;
-
-    color: var(--base-color);
 }
 
 /* selected text color */
@@ -102,6 +102,7 @@ h6 {
 
 /* --- a --- */
 a {
+    color: var(--base-color);
     text-decoration: underline;
     transition-property: background-color;
     transition-duration: 80ms;
@@ -262,7 +263,6 @@ input[type="text"], textarea {
 input[type="text"]:focus, textarea:focus {
     outline: none;
 }
-
 
 
 /* nav */
