@@ -55,34 +55,33 @@ body {
 }
 
 /* --- h tags --- */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: .5rem;
+    margin-bottom: .2rem;
+}
+
 h1 {
     font-size: 3.5rem;
-    margin-bottom: .2rem;
 }
 
 h2 {
     font-size: 3rem;
-    margin-bottom: .2rem;
 }
 
 h3 {
     font-size: 2.5rem;
-    margin-bottom: .2rem;
 }
 
 h4 {
     font-size: 2rem;
-    margin-bottom: .2rem;
 }
 
 h5 {
     font-size: 1.5rem;
-    margin-bottom: .2rem;
 }
 
 h6 {
     font-size: 1.25rem;
-    margin-bottom: .2rem;
 }
 
 /* --- a --- */
@@ -245,10 +244,6 @@ input[type="text"]:focus, textarea:focus {
 /* styles of specific tags are changed if parent is a nav tag */
 header, nav {
     text-align: center;
-}
-
-nav {
-    margin-bottom: 4rem;
 }
 
 header h1 {
