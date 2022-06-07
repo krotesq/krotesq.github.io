@@ -1,0 +1,22 @@
+@import url(//db.onlinewebfonts.com/c/759573e11a5e10f3e75b30c7a37d02a3?family=Old+London);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+#logo {
+    color: white;
+    letter-spacing: .2rem;
+    font-family: "Old London";
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
