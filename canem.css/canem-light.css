@@ -1,37 +1,15 @@
-/* --- light theme base & accent colors --- */
-/* edit to your preference for systems with light mode preference */
-@media (prefers-color-scheme: light) {
-    :root {
-        --base-color: rgb(49, 49, 49);
-        --accent-color: rgb(50, 146, 211);
-        --light-color: rgb(109, 109, 109);
-        --lighter-color:  rgb(139, 139, 139);
-        --selection-color: rgb(146, 201, 226);
-
-        --background-base-color: rgb(233, 233, 233);
-        --background-accent-color: rgb(224, 224, 224);
-
-    }
-}
-
-/* --- dark theme base & accent colors --- */
-/* edit to your preference for systems with dark mode preference*/
-@media (prefers-color-scheme: dark) {
-    :root {
-        --base-color: rgb(255, 255, 255);
-        --accent-color: rgb(66, 136, 228);
-        --light-color: rgb(58, 58, 58);
-        --lighter-color:  rgb(139, 139, 139);
-
-        --selection-color: rgb(40, 210, 226);
-        
-        --background-base-color: rgb(18,18,18);
-        --background-accent-color: rgb(22, 22, 22);
-    }
-}
-
 /* --- global variables --- */
 :root {
+    /* colors */
+    --base-color: rgb(49, 49, 49);
+    --accent-color: rgb(149, 211, 50);
+    --light-color: rgb(109, 109, 109);
+    --lighter-color:  rgb(139, 139, 139);
+    --selection-color: rgb(231, 225, 138);
+
+    --background-base-color: rgb(233, 233, 233);
+    --background-accent-color: rgb(224, 224, 224);
+    
     /* fonts */
     --font-base-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     --font-base-mono: monospace;
