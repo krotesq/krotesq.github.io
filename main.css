@@ -1,4 +1,4 @@
-@import url(//db.onlinewebfonts.com/c/759573e11a5e10f3e75b30c7a37d02a3?family=Old+London);
+@import url('https://fonts.cdnfonts.com/css/old-london');
 
 * {
     box-sizing: border-box;
@@ -13,7 +13,7 @@ body {
 #logo {
     color: white;
     letter-spacing: .2rem;
-    font-family: "Old London";
+    font-family: 'Old London', sans-serif;
     font-size: 3rem;
     position: absolute;
     top: 50%;
